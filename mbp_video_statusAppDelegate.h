@@ -11,12 +11,14 @@
 @interface mbp_video_statusAppDelegate : NSObject <NSApplicationDelegate>
 {
     NSWindow * window;
+    NSMenu * menu;
     NSImage * nvidiaImage, * intelImage;
     NSTimer * timer;
     NSStatusItem * statusItem;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSMenu *menu;
 
 - (void)updateStatus:(id)sender;
 
